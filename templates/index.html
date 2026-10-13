@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="login-page">
+
+    <div class="login-card">
+
+        <div class="login-icon">
+            🔐
+        </div>
+
+        <h1>Welcome Back!</h1>
+
+        <p class="login-subtitle">
+            Enter your details to continue
+        </p>
+
+        <form action="/submit" method="POST">
+
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    placeholder="Enter your age"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="college">College</label>
+                <input
+                    type="text"
+                    id="college"
+                    name="college"
+                    placeholder="Enter your college"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="Email">Email</label>
+                <input
+                    type="text"
+                    id="Email"
+                    name="Email"
+                    placeholder="Enter your college Email ID"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="AdmissionID">AdmissionID</label>
+                <input
+                    type="text"
+                    id="AdmissionID"
+                    name="AdmissionID"
+                    placeholder="Enter your college AdmissionID"
+                    required
+                >
+            </div>
+
+
+            <button type="submit">
+                LOGIN →
+            </button>
+
+        </form>
+
+        <p class="login-footer">
+            Student Information Portal
+            <br>
+            @Created by Sagar Raj
+        </p>
+
+    </div>
+
+</body>
+
+</html>

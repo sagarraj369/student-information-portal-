@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* =================================
+   LOGIN PAGE
+   ================================= */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        radial-gradient(circle at top left, #8b9cf6, transparent 35%),
+        radial-gradient(circle at bottom right, #a86de8, transparent 35%),
+        linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.login-card {
+    width: 430px;
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+.login-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    font-size: 40px;
+
+    box-shadow:
+        0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.login-card h1 {
+    margin: 10px 0 8px;
+
+    color: #222;
+
+    font-size: 32px;
+}
+
+.login-subtitle {
+    margin: 0 0 30px;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+/* INPUTS */
+
+.input-group {
+    text-align: left;
+
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 2px solid #eeeeee;
+
+    border-radius: 12px;
+
+    background: #fafafa;
+
+    color: #222;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #667eea;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+/* LOGIN BUTTON */
+
+.login-card button {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(102, 126, 234, 0.35);
+}
+
+.login-card button:active {
+    transform: translateY(0);
+}
+
+.login-footer {
+    margin-top: 25px;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+/* =================================
+   PROFILE PAGE
+   ================================= */
+
+.profile-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        radial-gradient(circle at top left, #8b9cf6, transparent 35%),
+        radial-gradient(circle at bottom right, #a86de8, transparent 35%),
+        linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.profile-card {
+    width: 430px;
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 28px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.profile-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    font-size: 42px;
+
+    box-shadow:
+        0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.profile-title {
+    margin: 10px 0 5px;
+
+    color: #222;
+
+    font-size: 32px;
+}
+
+.profile-subtitle {
+    margin-bottom: 30px;
+
+    color: #07f437;
+
+    font-size: 15px;
+}
+
+.info-box {
+    display: flex;
+
+    align-items: center;
+
+    text-align: left;
+
+    margin: 15px 0;
+
+    padding: 15px;
+
+    background: #f7f7ff;
+
+    border-radius: 15px;
+
+    border: 1px solid #e7e7ff;
+}
+
+.info-icon {
+    width: 45px;
+    height: 45px;
+
+    margin-right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+}
+
+.info-box small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+.info-box strong {
+    display: block;
+
+    color: #222;
+
+    font-size: 16px;
+
+    word-break: break-word;
+}
+
+.back-button {
+    display: block;
+
+    margin-top: 25px;
+
+    padding: 13px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =================================
+   MOBILE
+   ================================= */
+
+@media (max-width: 500px) {
+
+    .login-card,
+    .profile-card {
+        width: 100%;
+
+        padding: 30px 22px;
+    }
+
+    .login-card h1,
+    .profile-title {
+        font-size: 27px;
+    }
+
+}

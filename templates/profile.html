@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Profile</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="profile-page">
+
+    <div class="profile-card">
+
+        <div class="profile-icon">
+            👤
+        </div>
+
+        <h1 class="profile-title">Welcome!</h1>
+
+        <p class="profile-subtitle">
+            Your login was successful
+        </p>
+
+        <div class="info-box">
+            <span class="info-icon">👤</span>
+            <div>
+                <small>Name</small>
+                <strong>{{ name }}</strong>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <span class="info-icon">🎂</span>
+            <div>
+                <small>Age</small>
+                <strong>{{ age }}</strong>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <span class="info-icon">🎓</span>
+            <div>
+                <small>College</small>
+                <strong>{{ college }}</strong>
+            </div>
+        </div>
+
+
+        <div class="info-box">
+            <span class="info-icon">📧</span>
+            <div>
+                <small>Email</small>
+                <strong>{{ Email }}</strong>
+            </div>
+        </div>
+
+
+
+        <div class="info-box">
+            <span class="info-icon">🏫</span>
+            <div>
+                <small>AdmissionID</small>
+                <strong>{{ AdmissionID }}</strong>
+            </div>
+        </div>
+
+
+        <a href="/" class="back-button">
+            👋Back to Login
+        </a>
+
+    </div>
+
+</body>
+
+</html>
